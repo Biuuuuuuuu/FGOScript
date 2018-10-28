@@ -55,12 +55,12 @@ Sub enter
 	FindPic 290, 240, 450, 600,"C:\FGO\apple1.bmp",0.7,x,y	
 	FindPic 290, 240, 450, 600,"C:\FGO\apple.bmp",0.7,u,v
 	If x>0 Then 
-		MoveTo x,y
+		MoveTo x+50,y+50
 		LeftClick 1
 		Delay 1000
 		Call waitToClick("C:\FGO\accept.bmp", 50, 30)
 	ElseIf u > 0 Then
-		MoveTo u, v
+		MoveTo u+50, v+50
 		LeftClick 1
 		Delay 1000
 		Call waitToClick("C:\FGO\accept.bmp", 50, 30)		
