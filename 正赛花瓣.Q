@@ -97,7 +97,7 @@ Sub selectFriend//Ñ¡ÔñÖúÕ½
 			End If
 		End If		
 	Wend
-	MoveTo x, y
+	MoveTo x, y+40
 	LeftClick 1	
 	Delay 1200
 End Sub
