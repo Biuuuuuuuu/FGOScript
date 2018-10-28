@@ -354,7 +354,13 @@ While True
 	End If
 	mx = - 1 
 	my = - 1
-	FindPic 600, 0, 1200, 500, "C:\FGO\start.bmp", 0.8, mx, my
+	FindPic 150, 150, 1200, 600, "C:\FGO\end1.bmp", 0.7, mx, my
+	If mx > 0 and my > 0 Then 
+		Goto EndL
+	End If
+	mx = - 1 
+	my = - 1
+	FindPic 600, 0, 1300, 500, "C:\FGO\start.bmp", 0.8, mx, my
 	If mx > 0 and my > 0 Then 
 		Goto NextRoundL
 	End If
@@ -413,6 +419,9 @@ While mx < 0 or my < 0
 		Delay 100
 		LeftClick 1//¹Ø±Õ²Ëµ¥
 		Delay 1000
+		
+		MoveTo 640, 600//¹Ø±Õ
+		LeftClick 1
 		
 	Next
 	TracePrint "max i reached:"
